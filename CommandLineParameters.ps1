@@ -2,7 +2,8 @@
 param (
     [string]$server = "http://defaultserver",
     [string]$username = $(throw "-username is required."),
-    [string]$password = $( Read-Host "Input password, please" )
+    [string]$password = $( Read-Host "Input password, please" ),
+    [Switch]$doSomething #To use pass -doSomething 
  )
 
  Write-Host "Server = $server, username = $username, password = $password"
